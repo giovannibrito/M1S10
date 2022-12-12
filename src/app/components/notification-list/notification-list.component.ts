@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {NOTIFICACOES} from "../../static/notificacoes"
+import { NOTIFICACOES } from 'src/app/static/notificacoes';
 
-interface Notificacao{
+interface Notificacao {
   aplicativo: string;
   mensagem: string;
   data: string;
@@ -11,12 +11,12 @@ interface Notificacao{
 @Component({
   selector: 'ntap-notification-list',
   templateUrl: './notification-list.component.html',
-  styleUrls: ['./notification-list.component.scss']
+  styleUrls: ['./notification-list.component.scss'],
 })
 export class NotificationListComponent {
   notificacoes: Notificacao[] = NOTIFICACOES;
-  
+
   marcarLido(notificacao: Notificacao) {
-    notificacao.lido = true
+    notificacao.lido = true;
   }
 }

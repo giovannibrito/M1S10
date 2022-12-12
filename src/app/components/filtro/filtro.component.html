@@ -1,0 +1,7 @@
+<button
+  class="btn btn-primary mx-1 my-3"
+  *ngFor="let botao of botoes"
+  (click)="clickBotao.emit(botao)"
+>
+  {{ botao }}
+</button>
