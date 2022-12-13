@@ -1,7 +1,7 @@
 <ul class="list-group">
   <li
     class="list-group-item"
-    *ngFor="let notificacao of notificacoes"
+    *ngFor="let notificacao of notificacoesFiltradas"
     [ngClass]="{ lido: notificacao.lido }"
   >
     <div class="titulo fw-bold">{{ notificacao.aplicativo }}</div>

@@ -1,7 +1,8 @@
 <button
   class="btn btn-primary mx-1 my-3"
   *ngFor="let botao of botoes"
-  (click)="clickBotao.emit(botao)"
+  (click)="clickBotao.emit(botao.url)"
+  [routerLink]="[botao.url]"
 >
-  {{ botao }}
+  {{ botao.texto }}
 </button>
